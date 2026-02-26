@@ -10,7 +10,6 @@ This lab demonstrates advanced network configuration using **OSPF(multi-area), B
 - Multi-area OSPF
 - Inter-AS BGP routing
 
-
 ## Lab Topology
 
 ### OSPF + BGP + IPv6 Network Diagram
@@ -22,3 +21,11 @@ The topology includes:
 - Two core routers (AS 65001, AS 65002)  
 - Two client networks (AS 65100, AS 65200)  
 - IPv4 and IPv6 addressing on all links  
+
+## 🛠 Implementation Highlights
+
+- Configured multi-area OSPF (area 0 as backbone, areas 100/200 for clients)
+- Established eBGP peering between AS 65000, 65001, and 65002
+- Implemented dual-stack IPv4 and IPv6 routing across all links
+- Configured loopbacks and local LAN interfaces on client routers
+
