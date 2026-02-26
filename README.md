@@ -22,10 +22,15 @@ The topology includes:
 - Two client networks (AS 65100, AS 65200)  
 - IPv4 and IPv6 addressing on all links  
 
-## 🛠 Implementation Highlights
+## Implementation Highlights
 
 - Configured multi-area OSPF (area 0 as backbone, areas 100/200 for clients)
 - Established eBGP peering between AS 65000, 65001, and 65002
 - Implemented dual-stack IPv4 and IPv6 routing across all links
 - Configured loopbacks and local LAN interfaces on client routers
 
+## Verification
+
+- Connectivity and routing verified using built-in commands in each router configuration.
+- IPv4 and IPv6 reachability confirmed between all clients and provider/core routers.
+- OSPF neighbor relationships and BGP peering established successfully.
